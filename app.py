@@ -58,3 +58,25 @@ def quick_sort(arr):
 
 num_list = [ 2, 3,7,4,1,5,3]
 # print(quick_sort(sample_one))
+
+# comparing the time it takes to sort start a given list
+bubble_start_time = time.time()
+print(bubble_sort(sample_one))
+bubble_end_time = time.time()
+
+
+insertion_start_time = time.time()
+print(insertion_sort(sample_one))
+insertion_end_time = time.time()
+
+
+quick_start_time = time.time()
+print(quick_sort(sample_one))
+quick_end_time = time.time()
+
+
+print('Bubble Sort Time =>' , bubble_end_time - bubble_start_time)
+print('insertion Sort Time =>' , insertion_end_time - insertion_start_time)
+print('quick Sort Time =>' , quick_end_time - quick_start_time)
+
+
